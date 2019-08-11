@@ -1,20 +1,36 @@
 {
   "name": "no-more-cors-in-dev",
+  "description": "Microservices to avoid CORS redirecting request",
+  "author": "Daniel Naranjo",
+  "license": "MIT",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "micro",
     "dev": "micro-dev",
+    "build": "micro",
     "inspect": "node --inspect node_modules/.bin/micro-dev"
   },
   "dependencies": {
     "micro": "latest",
-    "node-fetch": "latest",
-    "request": "^2.88.0"
+    "micro-fork": "latest",
+    "node-fetch": "latest"
   },
-  "author": "Daniel Naranjo",
-  "license": "MIT",
   "devDependencies": {
     "micro-dev": "^3.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/danielnaranjo/no-more-cors-in-dev/issues"
+  },
+  "homepage": "https://github.com/danielnaranjo/no-more-cors-in-dev#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielnaranjo/no-more-cors-in-dev.git"
+  },
+  "keywords": [
+    "micro",
+    "microservice",
+    "serverless",
+    "API",
+    "cors"
+  ]
 }
