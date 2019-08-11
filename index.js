@@ -1,6 +1,12 @@
+const fetch = require('node-fetch')
 const { json, send } = require('micro')
 const { router, get, post } = require('micro-fork')
-const fetch = require('node-fetch');
+const microCors = require('micro-cors')
+const cors = microCors({
+	origin: '*',
+	allowMethods: ['POST', 'GET', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+	allowHeaders: ['X-Requested-With', 'Access-Control-Allow-Origin', 'X-HTTP-Method-Override', 'Content-Type', 'Authorization', 'Accept']
+})
 
 const getData = async (req, res) => {
 	const { url } = req.query
@@ -18,9 +24,11 @@ const sendData = async (req, res) => {
 
 const notfound = (req, res) => send(res, 404, 'Not found route')
 
-module.exports = router()(
-	get('/api', getData),
-	post('/api', sendData),
-	get('/*', notfound),
+module.exports = cors(
+	router()(
+		get('/api', getData),
+		post('/api', sendData),
+		get('/*', notfound),
+	)
 )
 

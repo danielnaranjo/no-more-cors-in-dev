@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "micro": "latest",
+    "micro-cors": "^0.1.1",
     "micro-fork": "latest",
     "node-fetch": "latest"
   },
