@@ -1,22 +1,28 @@
 
 # NO MORE CORS IN DEV
 
-## How to use
+### How to use
 
 Download or [clone the repo](https://github.com/danielnaranjo/no-more-cors-in-dev):
 
 ```bash
-curl http://fuckcors.now.sh/endpoint={URL}
+git clone https://github.com/danielnaranjo/no-more-cors-in-dev
 ```
 
-## Usage
+Install it and run:
 
-GET
+```bash
+cd no-more-cors-in-dev  
+npm i 
+npm run dev
+```
+
+### Usage
+
 ```
 GET http://127.0.0.1/api?url=https://example.com/app/v1/information
 ```
 
-POST
 ```
 POST http://127.0.0.1/api HTTP/1.1
 Content-Type: application/json
@@ -29,13 +35,12 @@ Content-Type: application/json
     }
 }
 ```
-
-Install it and run:
-
-```bash
-npm i
-npm run dev
 ```
+PUT
+PATCH
+DELETE
+```
+
 
 Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
 
@@ -43,12 +48,14 @@ Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.
 now
 ```
 
-## The idea behind the example
+### The idea behind the example
 
-Should I explain my motivation? I work with Angular or React I have to deal with CORS policy, configuration, etc. I tried to do it, So, this service fix all this crap.. Made a request to this service passing to data... No more configuration, testing, etc.
+Every day I work with Angular or React in Frontend and I have to deal with CORS policy, configuration, etc. I tired to do it, So, this service fix all this crap, this script make a request to this service passing to data... No more configuration, testing, etc. 
 
-## Feel free to say Hello!
+Easy plug-and-play!
+
+### Feel free to say Hello!
 Twitter: [@naranjodaniel](https://twitter.com/naranjodaniel)
 
-## Licence
+### Licence
 MIT
