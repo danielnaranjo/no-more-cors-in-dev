@@ -1,0 +1,20 @@
+{
+  "name": "external-api-call",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "dev": "micro-dev",
+    "inspect": "node --inspect node_modules/.bin/micro-dev"
+  },
+  "dependencies": {
+    "micro": "latest",
+    "node-fetch": "latest",
+    "request": "^2.88.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "micro-dev": "^3.0.0"
+  }
+}
