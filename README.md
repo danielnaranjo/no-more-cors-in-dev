@@ -3,10 +3,10 @@
 
 ## How to use
 
-Download or [clone the repo](https://github.com/zeit/micro):
+Download or [clone the repo](https://github.com/danielnaranjo/no-more-cors-in-dev):
 
 ```bash
-curl 
+curl http://fuckcors.now.sh/endpoint={URL}
 ```
 
 Install it and run:
@@ -24,4 +24,10 @@ now
 
 ## The idea behind the example
 
-Shows how to get data from an external api using async/await.
+Should I explain my motivation? 
+
+## Feel free to say Hello!
+Twitter: [@naranjodaniel](https://twitter.com/naranjodaniel)
+
+## Licence
+MIT

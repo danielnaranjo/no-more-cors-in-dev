@@ -1,5 +1,5 @@
 {
-  "name": "external-api-call",
+  "name": "no-more-cors-in-dev",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "node-fetch": "latest",
     "request": "^2.88.0"
   },
-  "author": "",
+  "author": "Daniel Naranjo",
   "license": "MIT",
   "devDependencies": {
     "micro-dev": "^3.0.0"

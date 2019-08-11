@@ -1,5 +1,5 @@
 {
-    "name" : "daily-tasks",
+    "name" : "fuckcors",
     "version": 2,
-    "public": false
+    "public": true
 }
