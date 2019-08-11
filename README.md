@@ -1,6 +1,8 @@
 
 # NO MORE CORS IN DEV
 
+[![CircleCI](https://circleci.com/gh/danielnaranjo/no-more-cors-in-dev/tree/master.svg?style=svg)](https://circleci.com/gh/danielnaranjo/no-more-cors-in-dev/tree/master)
+
 ### How to use
 
 Download or [clone the repo](https://github.com/danielnaranjo/no-more-cors-in-dev):
