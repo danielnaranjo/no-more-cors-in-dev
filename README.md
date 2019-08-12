@@ -28,12 +28,14 @@ npm run dev
 
 ### Usage
 
+Micro use port 3000 by default but worry, Micro fix it ;) 
+
 ```
-GET http://127.0.0.1/api?url=https://example.com/app/v1/information
+GET http://127.0.0.1:3000/api?url=https://example.com/app/v1/information
 ```
 
 ```
-POST http://127.0.0.1/api HTTP/1.1
+POST http://127.0.0.1:3000/api HTTP/1.1
 Content-Type: application/json
 
 {
@@ -46,7 +48,7 @@ Content-Type: application/json
 ```
 
 ``` 
-OPTIONS http://127.0.0.1/api HTTP/1.1
+OPTIONS http://127.0.0.1:3000/api HTTP/1.1
 ``` 
 
 
