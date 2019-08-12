@@ -4,8 +4,22 @@ const { router, get, post, options } = require('micro-fork')
 const microCors = require('micro-cors')
 const cors = microCors({
 	origin: '*',
-	allowMethods: ['POST', 'GET', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-	allowHeaders: ['X-Requested-With', 'Access-Control-Allow-Origin', 'X-HTTP-Method-Override', 'Content-Type', 'Authorization', 'Accept']
+	allowMethods: [
+		'POST', 
+		'GET', 
+		'PUT', 
+		'PATCH', 
+		'DELETE', 
+		'OPTIONS'
+	],
+	allowHeaders: [
+		'X-Requested-With', 
+		'Access-Control-Allow-Origin', 
+		'X-HTTP-Method-Override', 
+		'Content-Type', 
+		'Authorization', 
+		'Accept'
+	]
 })
 
 const getData = async (req, res) => {
@@ -16,13 +30,15 @@ const getData = async (req, res) => {
 }
 
 const sendData = async (req, res) => {
-	console.log('test',JSON.stringify(body))
 	const body = await json(req)
-	let pass = {}
-	if (body.data) {
-		pass = JSON.stringify(body.data);
+	let fields = {
+		method: 'POST'
 	}
-	const toSend = await fetch(`${body.url}`, { method: 'POST' })
+	if (body.data) {
+		fields.data = JSON.stringify(body.data);
+	}
+	// console.log(`D: ${JSON.stringify(body.data)}`)
+	const toSend = await fetch(`${body.url}`, fields)
 	const response = await toSend.json()
 	send(res, 200, response)
 }
