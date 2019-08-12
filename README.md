@@ -37,6 +37,12 @@ Content-Type: application/json
     }
 }
 ```
+
+``` 
+OPTIONS http://127.0.0.1/api HTTP/1.1
+``` 
+
+
 ```
 PUT
 PATCH
