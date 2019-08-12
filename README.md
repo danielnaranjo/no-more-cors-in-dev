@@ -70,7 +70,7 @@ Every day I work with Angular or React in Frontend and I have to deal with CORS 
 Easy plug-and-play!
 
 ### Feel free to say Hello!
-Twitter: [@naranjodaniel](https://twitter.com/naranjodaniel)
+Twitter: [@naranjodaniel](https://twitter.com/naranjodaniel) or [buy](https://www.buymeacoffee.com/danielnaranjo) a coffee
 
 ### Licence
 MIT
