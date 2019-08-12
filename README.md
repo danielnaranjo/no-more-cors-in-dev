@@ -19,6 +19,13 @@ npm i
 npm run dev
 ```
 
+### Under the hood
+
+[micro](https://github.com/zeit/micro)
+[micro-fork](https://github.com/amio/micro-fork)
+[micro-cors](https://github.com/possibilities/micro-cors)
+[node-fetch](https://www.npmjs.com/package/node-fetch)
+
 ### Usage
 
 ```
