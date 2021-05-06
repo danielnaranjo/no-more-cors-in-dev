@@ -11,7 +11,7 @@
     "inspect": "node --inspect node_modules/.bin/micro-dev"
   },
   "dependencies": {
-    "dotenv": "^8.0.0",
+    "dotenv": "^9.0.0",
     "micro": "latest",
     "micro-cors": "^0.1.1",
     "micro-fork": "latest",
